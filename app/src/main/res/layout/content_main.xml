@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="arduino.bogdan.ro.aplicatiearduino.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+
+
+        <ImageButton
+            android:id="@+id/leftBtn"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/left_arrow_not_clicked"
+            />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/rightBtn"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrow_not_clicked"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="30dp"
+        android:layout_weight="0.5"
+        >
+
+
+        <ImageButton
+            android:id="@+id/upBtn"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/up_arrow_not_clicked"
+            />
+
+        <ImageButton
+            android:id="@+id/downBtn"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/down_arrow_not_clicked"
+            />
+    </LinearLayout>
+
+</LinearLayout>
